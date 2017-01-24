@@ -1,0 +1,7 @@
+C:\Users\3J21\Desktop\DataTypesVariablesHomework\DataTypesVariablesHomework\bin\Debug\DataTypesVariablesHomework.exe.config
+C:\Users\3J21\Desktop\c#2017\DataTypesVariablesHomework\DataTypesVariablesHomework\bin\Debug\DataTypesVariablesHomework.exe.config
+C:\Users\3J21\Desktop\c#2017\DataTypesVariablesHomework\DataTypesVariablesHomework\bin\Debug\DataTypesVariablesHomework.exe
+C:\Users\3J21\Desktop\c#2017\DataTypesVariablesHomework\DataTypesVariablesHomework\bin\Debug\DataTypesVariablesHomework.pdb
+C:\Users\3J21\Desktop\c#2017\DataTypesVariablesHomework\DataTypesVariablesHomework\obj\Debug\DataTypesVariablesHomework.csprojResolveAssemblyReference.cache
+C:\Users\3J21\Desktop\c#2017\DataTypesVariablesHomework\DataTypesVariablesHomework\obj\Debug\DataTypesVariablesHomework.exe
+C:\Users\3J21\Desktop\c#2017\DataTypesVariablesHomework\DataTypesVariablesHomework\obj\Debug\DataTypesVariablesHomework.pdb
