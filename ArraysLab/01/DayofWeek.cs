@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _01DayofWeek
+﻿namespace _01DayofWeek
 {
-    class DayofWeek
+    using System;
+
+    public class DayofWeek
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] weekDays = new string[]
             {
-                
                 "Monday",
                 "Tuesday",
                 "Wednesday",
@@ -24,7 +19,7 @@ namespace _01DayofWeek
 
             int input = int.Parse(Console.ReadLine());
 
-            if (input>0 && input<8)
+            if (input > 0 && input < 8)
             {
                 Console.WriteLine(weekDays[input - 1]);
             }
@@ -32,7 +27,6 @@ namespace _01DayofWeek
             {
                 Console.WriteLine("Invalid Day!");
             }
-          
         }
     }
 }

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _8.Most_Frequent_Number
+﻿namespace _8.Most_Frequent_Number
 {
-    class Program
+    using System;
+    using System.Linq;
+
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int[] uniquenumbers = numbers.Distinct().ToArray();
@@ -25,8 +22,8 @@ namespace _8.Most_Frequent_Number
 
                         counter++;
                     }
-
                 }
+
                 if (counter > bestfreq)
                 {
                     bestnumber = currentNumber;
@@ -34,8 +31,7 @@ namespace _8.Most_Frequent_Number
 
                 }
             }
-                Console.WriteLine(bestnumber);
-            }
+            Console.WriteLine(bestnumber);
         }
     }
-    
+}

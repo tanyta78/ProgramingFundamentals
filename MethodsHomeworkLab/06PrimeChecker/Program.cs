@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _06PrimeChecker
+﻿namespace _06PrimeChecker
 {
-    class Program
+    using System;
+
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            //Write a Boolean method IsPrime(n) that check whether a given longeger number n is prime.
+            ////Write a Boolean method IsPrime(n) that check whether a given longeger number n is prime.
             long number = long.Parse(Console.ReadLine());
-            bool result= IsPrime(number);
+            bool result = IsPrime(number);
             Console.WriteLine(result);
         }
 
-        static bool IsPrime(long n)
+        public static bool IsPrime(long n)
         {
             bool isPrime = true;
-            if (n<2)
+            if (n < 2)
             {
                 isPrime = false;
-
-            }else
+            }
+            else
             {
                 for (long i = 2; i <= Math.Sqrt(n); i++)
                 {
@@ -34,7 +30,7 @@ namespace _06PrimeChecker
                     }
                 }
             }
-            
+
             return isPrime;
         }
     }

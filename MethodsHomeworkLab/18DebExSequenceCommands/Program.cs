@@ -17,14 +17,12 @@
 
             while (command[0] != "stop")
             {
-
                 int[] args = new int[2];
 
                 if (command[0] == "add" ||
                     command[0] == "subtract" ||
                     command[0] == "multiply")
                 {
-
                     args[0] = int.Parse(command[1]);
                     args[1] = int.Parse(command[2]);
                     PerformAction(array, command[0], args);
@@ -33,17 +31,15 @@
                 {
                     PerformAction(array, command[0], args);
                 }
+
                 PrintArray(array);
-
                 Console.WriteLine();
-
                 command = Console.ReadLine().Split(' ').ToArray();
             }
         }
 
-        static void PerformAction(long[] array, string action, int[] args)
+       public static void PerformAction(long[] array, string action, int[] args)
         {
-
             int pos = args[0];
             int value = args[1];
 
@@ -64,7 +60,6 @@
                 case "rshift":
                     ArrayShiftRight(array);
                     break;
-
             }
         }
 
@@ -75,6 +70,7 @@
             {
                 array[i] = array[i - 1];
             }
+
             array[0] = num;
         }
 
@@ -85,6 +81,7 @@
             {
                 array[i] = array[i + 1];
             }
+
             array[array.Length - 1] = num;
         }
 
@@ -94,7 +91,6 @@
             {
                 Console.Write(array[i] + " ");
             }
-
         }
     }
 }

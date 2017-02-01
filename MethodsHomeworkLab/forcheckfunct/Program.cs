@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MethodsHomework
+﻿namespace MethodsHomework
 {
-    class Program
+    using System;
+
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            //You are given a text and a number count. Your program should search through the text for the letter 'p' (ASCII code 112) 
-            //and print 'p' along with count letters to its right.
+            ////You are given a text and a number count. Your program should search through the text for the letter 'p' (ASCII code 112) 
+            ////and print 'p' along with count letters to its right.
             string text = Console.ReadLine();
             int count = int.Parse(Console.ReadLine());
             int startIndex = 0;
@@ -24,31 +20,26 @@ namespace MethodsHomework
                 if (text[i] == 'p')
                 {
                     hasMatch = true;
-
-                    endIndex = i + count+1;
+                    endIndex = i + count + 1;
                     startIndex = i;
                     if (endIndex >= length)
                     {
-                        Console.WriteLine(text.Substring(startIndex)); 
+                        Console.WriteLine(text.Substring(startIndex));
                     }
                     else
                     {
-                        
-                        Console.WriteLine(text.Substring(startIndex, count+1));
+                        Console.WriteLine(text.Substring(startIndex, count + 1));
                     }
-                  
-                    i = endIndex-1;
+
+                    i = endIndex - 1;
                     continue;
                 }
-                
             }
+
             if (!hasMatch)
             {
                 Console.WriteLine("no");
             }
-            
         }
     }
 }
-
-

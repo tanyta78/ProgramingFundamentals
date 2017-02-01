@@ -1,40 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Numerics;
-
-namespace _14FactorialZeros
+﻿namespace _14FactorialZeros
 {
-    class Program
+    using System;
+    using System.Numerics;
+
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
-            BigInteger FactorialNumber = Factorial(number);
+            BigInteger factorialNumber = Factorial(number);
             Console.WriteLine(ReturnNumofZeros(number));
-           
-
-
         }
-        static BigInteger Factorial(int n)
+
+        public static BigInteger Factorial(int n)
         {
-            BigInteger Factorial = 1;
+            BigInteger factorial = 1;
             for (int i = 1; i <= n; i++)
             {
-                Factorial *= i;
+                factorial *= i;
             }
-            return Factorial;
+
+            return factorial;
         }
-        static int ReturnNumofZeros(int n)
+
+        public static int ReturnNumofZeros(int n)
         {
             int timesZero = 0;
-
             for (int numb = 5; numb <= n; numb *= 5)
             {
                 timesZero += n / numb;
             }
+
             return timesZero;
         }
     }

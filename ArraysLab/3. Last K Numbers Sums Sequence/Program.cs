@@ -1,31 +1,31 @@
-﻿using System;
-class LAstKNumbers
+﻿namespace _03.LastKNumbersSums_Sequence
 {
-    static void Main(string[] args)
+    using System;
+
+    public class LAstKNumbers
     {
-        int numberOfElements = int.Parse(Console.ReadLine());
-        int k = int.Parse(Console.ReadLine());
-
-        long[] nums = new long[numberOfElements];
-        nums[0] = 1;
-
-        for (int index = 1; index < numberOfElements; index++)
+        public static void Main(string[] args)
         {
-            long sum = 0;
-            for (int previosindex = index - k; previosindex <= index - 1; previosindex++)
+            int numberOfElements = int.Parse(Console.ReadLine());
+            int k = int.Parse(Console.ReadLine());
+
+            long[] nums = new long[numberOfElements];
+            nums[0] = 1;
+
+            for (int index = 1; index < numberOfElements; index++)
             {
-                if (previosindex >= 0)
+                long sum = 0;
+                for (int previosindex = index - k; previosindex <= index - 1; previosindex++)
                 {
-                    sum += nums[previosindex];
-                    nums[index] = sum;
+                    if (previosindex >= 0)
+                    {
+                        sum += nums[previosindex];
+                        nums[index] = sum;
+                    }
                 }
-                   
             }
-               
+
+            Console.WriteLine(string.Join(" ", nums));
         }
-
-        Console.WriteLine(string.Join(" ", nums));
     }
-
 }
-

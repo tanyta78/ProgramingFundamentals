@@ -1,8 +1,8 @@
 ﻿using System;
- 
-class LongerLine
+
+public class LongerLine
 {
-    static void Main()
+    public static void Main()
     {
         double x1 = double.Parse(Console.ReadLine());
         double y1 = double.Parse(Console.ReadLine());
@@ -16,14 +16,14 @@ class LongerLine
         PrintLongerLine(x1, y1, x2, y2, x3, y3, x4, y4);
     }
 
-    static void PrintLongerLine(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
+    public static void PrintLongerLine(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
     {
         double firstLineLen = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
         double secondLineLen = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
 
         if (firstLineLen >= secondLineLen)
         {
-            bool isFirstCloser = closerPoint(x1, y1, x2, y2);
+            bool isFirstCloser = CloserPoint(x1, y1, x2, y2);
             if (isFirstCloser)
             {
                 Console.WriteLine($"({x1}, {y1})({x2}, {y2})");
@@ -35,7 +35,7 @@ class LongerLine
         }
         else
         {
-            bool isFirstCloser = closerPoint(x3, y3, x4, y4);
+            bool isFirstCloser = CloserPoint(x3, y3, x4, y4);
             if (isFirstCloser)
             {
                 Console.WriteLine($"({x3}, {y3})({x4}, {y4})");
@@ -47,7 +47,7 @@ class LongerLine
         }
     }
 
-    private static bool closerPoint(double x1, double y1, double x2, double y2)
+    public static bool CloserPoint(double x1, double y1, double x2, double y2)
     {
         double firstPointLine = Math.Sqrt(x1 * x1 + y1 * y1);
         double secondPointLine = Math.Sqrt(x2 * x2 + y2 * y2);
@@ -60,7 +60,7 @@ class LongerLine
         {
             isFirstCloser = false;
         }
+
         return isFirstCloser;
     }
-
 }

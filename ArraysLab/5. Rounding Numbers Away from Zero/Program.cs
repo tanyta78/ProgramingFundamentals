@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _5.Rounding_Numbers_Away_from_Zero
+﻿namespace _5.Rounding_Numbers_Away_from_Zero
 {
-    class Program
+    using System;
+    using System.Linq;
+
+   public class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
-            // Write a program to read an array of real numbers (space separated values), 
-            //round them to the nearest integer in “away from 0” style and print the output as in the examples below.
+            //// Write a program to read an array of real numbers (space separated values), 
+            ////round them to the nearest integer in “away from 0” style and print the output as in the examples below.
             double[] numbers = Console.ReadLine()
                         .Split(' ')
                         .Select(double.Parse)
@@ -20,11 +17,10 @@ namespace _5.Rounding_Numbers_Away_from_Zero
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                roundNumbers[i] =(int) Math.Round(numbers[i], MidpointRounding.AwayFromZero);
+                roundNumbers[i] = (int)Math.Round(numbers[i], MidpointRounding.AwayFromZero);
 
                 Console.WriteLine($"{numbers[i]} => {roundNumbers[i]}");
             }
-            
         }
     }
 }

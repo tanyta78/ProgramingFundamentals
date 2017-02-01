@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02Rotate_and_Sum
+﻿namespace _02Rotate_and_Sum
 {
-    class Program
+    using System;
+    using System.Linq;
+
+   public class Program
     {
-        static void Main(string[] args)
+       public static void Main()
         {
             var nums = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             var n = int.Parse(Console.ReadLine());
@@ -16,22 +13,26 @@ namespace _02Rotate_and_Sum
             int[] result = new int[nums.Length];
             for (int i = 0; i < n; i++)
             {
-                rotated(nums);
-                resultsum(result, nums);
+                RotateNum(nums);
+                ResultSum(result, nums);
             }
+
             Console.WriteLine(string.Join(" ", result));
         }
-        private static void rotated(int[] nums)
+
+        public static void RotateNum(int[] nums)
         {
             var value = nums[nums.Length - 1];
             for (int site = nums.Length - 1; site > 0; site--)
             {
                 nums[site] = nums[site - 1];
             }
+
             nums[0] = value;
             return;
         }
-        private static void resultsum(int[] result, int[] nums)
+
+        public static void ResultSum(int[] result, int[] nums)
         {
             for (int i = 0; i < nums.Length; i++)
             {

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Arrays
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Read two arrays of words and find the length of the largest common end (left or right).
             string[] arr1 = Console.ReadLine()
@@ -28,13 +28,15 @@ namespace Arrays
                     largesendLeft++;
                 }
             }
+
             for (int i = 0; i < minLenght; i++)
             {
-                if (arr1[arr1.Length-1-i] == arr2[arr2.Length-1-i])
+                if (arr1[arr1.Length - 1 - i] == arr2[arr2.Length - 1 - i])
                 {
                     largesendRigth++;
                 }
             }
+
             Console.WriteLine(Math.Max(largesendLeft, largesendRigth));
         }
     }
