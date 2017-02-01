@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataTypesAndVariables012017
+﻿namespace DataTypesAndVariables012017
 {
-    class CenturiesToMinutes
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class CenturiesToMinutes
     {
-        static void Main(string[] args)
+      public static void Main(string[] args)
         {
             int centuries = int.Parse(Console.ReadLine());
             int years = centuries * 100;
