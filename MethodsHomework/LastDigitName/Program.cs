@@ -1,27 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LastDigitName
+﻿namespace LastDigitName
 {
-    class Program
+    using System;
+
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            //Write a method that returns the English name of the last digit of a given number.
-            //Write a program that reads an longeger and prlongs the returned value from this method.
+            ////Write a method that returns the English name of the last digit of a given number.
+            ////Write a program that reads an longeger and prlongs the returned value from this method.
+
             long number = long.Parse(Console.ReadLine());
-            digitName(number);
+            DigitName(number);
         }
 
-        private static void digitName(long number)
+        public static void DigitName(long number)
         {
             long lastdigit = Math.Abs(number % 10);
             switch (lastdigit)
             {
-                case 1:Console.WriteLine("one");
+                case 1:
+                    Console.WriteLine("one");
                     break;
                 case 2:
                     Console.WriteLine("two");
