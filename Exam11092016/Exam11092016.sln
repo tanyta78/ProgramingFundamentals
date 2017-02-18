@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheaFoto", "TheaFoto\TheaFoto.csproj", "{572E33D1-6B23-4678-82F0-8BB565BC6612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2. Trophon the Grumpy Cat", "Problem 2. Trophon the Grumpy Cat\Problem 2. Trophon the Grumpy Cat.csproj", "{38C1BB5A-FC6B-44BE-839D-CA98E34DB5EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{572E33D1-6B23-4678-82F0-8BB565BC6612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572E33D1-6B23-4678-82F0-8BB565BC6612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572E33D1-6B23-4678-82F0-8BB565BC6612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572E33D1-6B23-4678-82F0-8BB565BC6612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C1BB5A-FC6B-44BE-839D-CA98E34DB5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C1BB5A-FC6B-44BE-839D-CA98E34DB5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C1BB5A-FC6B-44BE-839D-CA98E34DB5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C1BB5A-FC6B-44BE-839D-CA98E34DB5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
