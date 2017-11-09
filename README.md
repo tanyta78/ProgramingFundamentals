@@ -6,7 +6,7 @@
 <td align="center" width="33%"><img style="text-align: ce;" src="http://conf.softuni.bg/wp-content/uploads/2015/01/SoftUni-Logo-Flat_square-blue-300x235.png" alt="" /></td>
 <td align="center" width="33%">
 <h1><a href="https://softuni.bg/">SoftUni</a></h1>
-<h2>C#</h2>
+<h2>C# Programing</h2>
 </td>
 <td align="center" width="33%"><img src="https://avatars0.githubusercontent.com/u/22100183?s=460&v=4" alt="" />
 <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" />
@@ -24,8 +24,8 @@ Tatyana Milanova
 <!-- Programming Fundamentals Start --><hr />
 <table border="0" width="100%" cellspacing="1" cellpadding="3" align="center">
     <tbody>
-    <tr><th align="center" width="50%">Programming Fundamentals - януари 2017: <br /> </th><th width="40%">Grade: <br /> Issue Date:</th><th align="center width=">
-    <p><a title="Programming Fundamentals" href="#" target="_blank">Certificate</a></p>
+    <tr><th align="center" width="50%">Programming Fundamentals - януари 2017: <br /> </th><th width="40%">Grade:6.00 <br /> Issue Date:</th><th align="center width=">
+    <p><a title="Programming Fundamentals" href="https://softuni.bg/certificates/details/15496/00b8a65a" target="_blank">Certificate</a></p>
     </th></tr>
     <!-- Course Body -->
     <tr>
